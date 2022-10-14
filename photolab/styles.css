@@ -1,0 +1,270 @@
+@font-face {
+  font-family: 'Cram';
+  src: url('/photolab/cormorant_light_macroman.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cram';
+ 
+}
+
+.home-menu {
+  border: 1px solid #fff; 
+  color: #5995DA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   background-color:#f0f0f0;
+}
+
+.big-photo {
+  /* border: 1px solid #fff; */
+  margin: 20px;
+  background-color: #bdffeb;
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.big-photo-item {
+  border: 1px solid #000; 
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-blurb {
+  border: 1px solid #fff; 
+  background-color: #bdffeb;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #383838;
+}
+
+.home-header {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.blurb-container {
+    display: flex;
+    justify-content: center;
+}
+
+.home-text {
+    display: flex;
+    padding: 30px;
+    width: 400px;
+
+}
+
+.pie-eater {
+    display: flex;
+    padding: 30px;
+
+}
+
+.masonry { /* Masonry container */
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.item { /* Masonry bricks or child elements */
+  background-color: #eee;
+  display: inline-block;
+  margin: 0 0 1em;
+  width: 100%;
+}
+
+.portfolio-menu {
+  border: 1px solid #fff; 
+  color: #b6fcf8;
+  display: flex;
+  flex-direction: column;
+  background-color:#f0f0f0;
+}
+
+.portfolio-container {
+
+  margin: 20px;
+  background-color: #c0faf7;
+  display: flex;
+  justify-content:center;
+ 
+}
+
+
+.portfolio-left-text {
+  display: flex;
+
+  margin: 30px;
+  color:#383838;
+  order: -1;
+  align-items: center;
+  text-align:center;
+  
+  
+}
+
+.portfolio-left-image {
+  display: flex;
+  border: 3px solid #000;
+  margin: 30px;
+  order: -1;
+
+}
+
+.portfolio-right-text {
+  display: flex;
+
+  margin: 30px;
+  color:#383838;
+  align-items: center;
+
+
+}
+
+.portfolio-right-image {
+  display: flex;
+  border: 3px solid #000;
+  margin: 30px;
+}
+
+.reviews-menu {
+  display: flex;
+  border: 1px solid #fff; 
+  color: #b6fcf8;
+  background-color:#f0f0f0;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.review-container {
+  background-color: #ade1f7;
+  margin:30px;
+  margin-bottom:0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start;
+  flex-direction: column;
+}
+
+.review-text {
+
+  display: flex;
+  flex-direction: row;
+}
+
+.review-text h2 {
+  margin: 20px 20px 0px 20px;
+  color:#383838;
+
+}
+
+.review {
+  display: flex;
+  margin: 10px;
+  color:#383838;
+
+}
+
+.review-text img {
+    float:left
+}
+
+.about-menu {
+  display: flex;
+  border: 1px solid #fff; 
+  color: #383838;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color:#f0f0f0;
+}
+
+.about-header {
+  display: flex;
+  padding-left: 10px;
+  background-color: #99acff;
+  margin: 30px;
+  color:#383838;
+}
+
+.infobox {
+  background-color: #99acff;
+  margin: 0px 30px 30px 30px;
+  
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.infobox p {
+  
+  margin: 10px;
+  color:#383838; 
+}
+
+.infobox img {
+    float:left;
+    margin: 10px;
+}
+/* Smartphone styles */
+@media only screen and (max-width: 400px) {
+  .home-menu, .reviews-menu, .about-menu, .navbar{
+      width: 399px;
+      }
+  .big-photo{
+      width: 50%;
+      flex-direction: column;
+  }
+   .home-blurb{
+      width: 50%;
+      flex-direction: column;
+  }
+  .blurb-container{
+      width: 50%;
+      flex-direction: column;
+  }
+  .pie-eater{
+      width: 50%;
+      order:1;  
+    }
+  .home-text {
+      width: 50%;
+      order:2;
+  }
+  .reviews-container {
+      width:50%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .home-menu{
+      width: 401px;
+  }
+  .big-photo{
+      flex-direction: column;
+  }
+  .pie-eater{
+      order:1;  
+    }
+  .home-text {
+      order:2;
+  }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+ 
+}

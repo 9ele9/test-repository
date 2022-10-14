@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'Cram';
+  src: url('/photolab/cormorant_light_macroman.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cram';
+  
+}
+
+.product-menu, .about-menu, .locations-menu  {
+  /*border: 1px solid #fff; */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+   background-color:#f0f0f0;
+   border:5px solid #7a0019;
+   margin:1px;
+}
+
+.card {
+  margin: 15px;
+  
+}
+
+.infobox {
+  
+  margin: 30px;
+  display: flex;
+  
+  justify-content: center;
+  flex-direction: row;
+}
+
+.infobox-2 {
+  
+  
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.infobox-2 p {
+  
+  display: flex;
+  text-align: center;
+  padding: 5px 30px 5px 30px ;
+  color:#383838; 
+}
+
+.infobox-2 h1 {
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.infobox img {
+  display: flex;
+  
+  margin: 10px;
+}
+
+.location-box {
+  background-color:#f0f0f0;
+  border:5px solid #7a0019;
+  margin:10px 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.loc-box-text p, h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+

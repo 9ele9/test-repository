@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Fortune API</title>
+        <link rel="icon" type="image/x-icon" href="/design-principles/images/BarryPyeLogo.svg">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel='stylesheet' href='styles.css'/>
+    </head>
+    
+    <body>
+        <div class="menuBox">
+            <h1 class="explain">Random Advice App</h1>
+            <img src="/apitutorial/images/fortune.jpg" width="400px" alt="" class="cookie">
+            <p class="explain">Here is your random advice:</p>
+            <div class= "ugh" id='getAdvice'>Advice</div>
+        </div>
+        
+        
+    </body>
+    
+    <script>
+        /* global fetch */
+        /* global obj */
+        const getadvice = document.getElementById("getAdvice")
+        const url = "https://api.adviceslip.com/advice"
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                console.log(data.slip.advice);
+                const advice = data.slip.advice;
+                const straightTalk = document.createElement("p");
+                straightTalk.appendChild(document.createTextNode(advice));
+                
+                const getAdvice = document.getElementById("getAdvice");
+                getAdvice.textContent = "";
+                getAdvice.appendChild(straightTalk);
+                
+            })
+            
+            
+        
+        
+        
+         /*   .then(function(response) {
+            return response.json();
+        }).then(function(json) {
+            console.log(json);
+            console.log("got it");
+            
+            console.log(obj);
+            const everything = document.createElement("div");
+            
+            
+        })
+            
+            for (let i = 0; i < 1; i++) {
+                const num = json[i].advice;
+                const dick = document.createElement("p");
+                dick.appendChild(document.createTextNode(num));
+                everything.appendChild(dick);
+                
+            };
+            
+        });
+        
+        const getvice = document.getElementById("getAdvice");
+            getvice.textContent = "";
+            getvice.appendChild(everything);
+            */
+        
+         /* var result = JSON.parse(obj);
+            console.log("the advice is " + result.advice)
+            alert(result.id)
+        
+        const getadvice = document.getElementById("getAdvice")
+        getadvice.textContent = everything; */
+        
+       
+        
+    </script>
+    
+    

@@ -1,0 +1,71 @@
+
+.navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #FFF;        /* Light gray */
+  
+}
+
+.navilist {
+  float: left;
+  border-right: 1px solid #5c5c5c;
+}
+
+.navibutt {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navibutt:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #2eb3a9;
+}
+
+.active:hover {
+    background-color: #1f7d70;
+}
+
+body {
+  color: #414141;
+  background-color: #EEEEEE;
+}
+h1, h2, h3, h4, h5, h6 {
+  
+  text-align: center;
+}
+h1, h2, h3, h4, h5, h6, p, a, li, ul, ol {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+
+ul {
+  list-style-type: circle;
+  text-align: center;
+}
+
+ol {
+  list-style-type: lower-roman;
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}

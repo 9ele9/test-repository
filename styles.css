@@ -1,0 +1,44 @@
+h1, h2, h3, h4, h5, h6, p, a, li, ul, ol {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+p {
+    padding: 10px;
+}
+
+ul:first-child {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #5c5c5c;
+}
+
+li a:first-child {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:first-child :hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #2eb3a9;
+}
+
+.active:hover {
+    background-color: #1f7d70;
+}

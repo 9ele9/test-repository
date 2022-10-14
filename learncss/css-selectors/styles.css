@@ -1,0 +1,108 @@
+.navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: #FFF;        /* Light gray */
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.navilist {
+  float: left;
+  border-right: 1px solid #5c5c5c;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.navibutt {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navibutt:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #2eb3a9;
+}
+
+.active:hover {
+    background-color: #1f7d70;
+}
+
+.synopsis {
+  color: #7E8184;        /* Light gray */
+  font-style: italic;
+}
+
+.button:link,                 /* Change this */
+.button:visited {             /* Change this */
+  display: block;             /* Add this */
+  text-decoration: none;      /* Add this */
+
+  color: #FFF;
+  background-color: #5995DA;    /* Blue */
+  font-weight: bold;
+  padding: 20px;
+  text-align: left;
+  border: 2px solid #5D6063;    /* Dark gray */
+  border-radius: 5px;
+
+  width: 200px;
+  margin: 20px auto;
+}
+
+.button:hover,
+.button:visited:hover {
+  color: #FFF;
+  background-color: #76AEED;  /* Light blue */
+}
+
+.button:active,
+.button:visited:active {
+  color: #FFF;
+  background-color: #5995DA;  /* Blue */
+}
+
+.page {
+  width: 600px;
+  margin: 0 auto;
+}
+
+
+
+.call-to-action:link,
+.call-to-action:visited {
+  font-style: italic;
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.call-to-action:hover,
+.call-to-action:visited:hover {
+  background-color: #F5CF8E;     /* Light yellow */
+}
+
+.call-to-action:active,
+.call-to-action:visited:active {
+  background-color: #EEB75A;     /* Yellow */
+}
+
+.synopsis em {
+  font-style: normal;
+}
+
+
+
+p:last-of-type {
+  margin-bottom: 50px;
+}
+
